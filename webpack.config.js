@@ -1,10 +1,11 @@
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 
 module.exports = {
   entry: {
-    app: "./src/index.jsx",
+    app: "./src/index.tsx",
   },
   optimization: {
     splitChunks: {
@@ -19,7 +20,10 @@ module.exports = {
   },
   resolve: {
     modules: ["node_modules"],
-    extensions: [".js", ".jsx"],
+    extensions: [".js", ".tsx", ".ts"],
+    alias: {
+      src: path.resolve(__dirname, "src/"),
+    },
   },
   output: {
     path: path.join(__dirname, "/dist"),
@@ -29,7 +33,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$|jsx/,
+        test: /\.ts$|tsx/,
         exclude: /node_module/,
         use: {
           loader: "babel-loader",
@@ -52,5 +56,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "style.css",
     }),
+    new CleanWebpackPlugin(),
   ],
 }
