@@ -25,3 +25,15 @@
   `$ yarn build`
 - start(port: 9000)
   `$ yarn start`
+
+## Version
+
+```
+"webpack": "^5.28.0"
+"webpack-cli": "^4.5.0"
+"eslint": "^7.22.0"
+"react": "^17.0.2"
+"react-dom": "^17.0.2"
+"typescript": "^4.2.3"
+"node": "15.2.1"
+```
