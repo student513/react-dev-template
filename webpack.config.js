@@ -19,10 +19,10 @@ module.exports = {
     },
   },
   resolve: {
-    modules: ["node_modules"],
+    modules: [path.join(__dirname, "src"), "node_modules"],
     extensions: [".js", ".tsx", ".ts"],
     alias: {
-      src: path.resolve(__dirname, "src/"),
+      "@": path.resolve(__dirname, "src/"),
     },
   },
   output: {
