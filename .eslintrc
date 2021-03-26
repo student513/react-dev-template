@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "rules": {
+    "quotes": "off",
+    "semi": "off",
+    "no-undef": "off",
+    "arrow-body-style": "off",
+    "react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx"] }],
+    "import/extensions": "off",
+    "import/no-unresolved": "off"
+  }
+}
