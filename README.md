@@ -2,6 +2,15 @@
 
 - typescript, babel, webpack, eslint가 세팅된 React 개발 템플릿입니다.
 
+## 사용법
+
+1. 레포지토리 클론하기
+   `$ git clone https://github.com/student513/react-dev-template.git`
+2. 원격저장소 초기화
+   `$ git remote rm origin`
+3. 내 레포지토리에 연결하기
+   `$ git remote add origin https://github.com/---.git`
+
 ## Webpack Setting
 
 - Typescript
