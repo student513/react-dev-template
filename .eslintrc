@@ -1,5 +1,5 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "extends": ["airbnb"],
   "rules": {
     "quotes": "off",
@@ -8,6 +8,17 @@
     "arrow-body-style": "off",
     "react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx"] }],
     "import/extensions": "off",
-    "import/no-unresolved": "off"
+    "import/no-unresolved": "off",
+    "no-unused-vars": "warn",
+    "import/newline-after-import": "off",
+    "no-use-before-define": "off",
+    "object-curly-newline": "off",
+    "consistent-return": "off",
+    "comma-dangle": "off",
+    "spaced-comment": "off",
+    "react/button-has-type": "off",
+    "no-empty-pattern": "warn",
+    "import/prefer-default-export": "warn",
+    "no-shadow": "off"
   }
 }
