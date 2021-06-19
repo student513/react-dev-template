@@ -19,6 +19,8 @@
     "react/button-has-type": "off",
     "no-empty-pattern": "warn",
     "import/prefer-default-export": "warn",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }

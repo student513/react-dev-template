@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "react-jsx",
     "moduleResolution": "node",
     "module": "commonjs",
     "target": "es5",
