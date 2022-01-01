@@ -14,7 +14,6 @@
 ## Webpack Setting
 
 - Typescript
-- CSS/SCSS
 - 절대경로 적용: `@/components/~~`
 - 개발용 `webpack.config.dev.js`와 배포용 `webpack.config.prod.js` 설정 파일 분리
 
